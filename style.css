@@ -1,0 +1,148 @@
+@import "https://fonts.googleapis.com/css?family=Raleway";
+
+.bg {
+    background: black;
+}
+
+/* Circle behind */
+div.circleBehind a:before,
+div.circleBehind a:after {
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border: 4px solid #000305;
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    border-radius: 50%;
+    background: transparent;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+div.circleBehind a:after {
+    border-width: 2px;
+    transition: all 0.4s;
+}
+
+div.circleBehind a:hover:before {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+div.circleBehind a:hover:after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1.3);
+}
+
+.blue {
+    background: black;
+}
+
+div.container {
+    font-family: Raleway;
+    text-align: center;
+}
+
+div.container a {
+    color: #fff;
+    text-decoration: none;
+    font: 20px Raleway;
+    /* margin: 0px 10px;
+    padding: 10px 10px; */
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+/* Circle behind for navbar */
+.navbar-nav .nav-link:before,
+.navbar-nav .nav-link:after {
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    border: 4px solid #0277bd;
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    border-radius: 50%;
+    background: transparent;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+.navbar-nav .nav-link:after {
+    border-width: 2px;
+    transition: all 0.4s;
+}
+
+.navbar-nav .nav-link:hover:before {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+.navbar-nav .nav-link:hover:after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1.3);
+    
+}
+
+/* Bootstrap Overrides */
+.navbar-brand {
+    font-family: Raleway;
+}
+
+.navbar-nav .nav-link {
+    font-family: Raleway;
+}
+
+
+.font-glory {
+    font-family: "Give You Glory", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+}
+
+
+@font-face {
+	font-family: Augestina;
+	src: url('/font/Agustina-Signature.otf');
+}
+
+.handwriting-font{
+	font-family: Augestina;
+	text-transform: capitalize;
+    font-size: 20px; /* Ajusta el tamaño del texto según sea necesario */
+    padding-left: 2em;
+    color: white; /* Cambia el color del texto según sea necesario */
+    margin-right: auto;
+}
+
+.navbar-toggler {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Ajusta el estilo del ícono de la hamburguesa */
+.navbar-toggler-icon {
+    color: #fff; /* Cambia el color del ícono según sea necesario */
+}
+
+/* Agrega un poco de espacio al botón de navegación */
+.centertoggleNav {
+    margin-left: 30px; /* Ajusta la cantidad de espacio según sea necesario */
+}
+.divider {
+    height: 1px;
+    background-color: #ffffff; /* Adjust the color as needed */
+
+}
+.dividerBlack{
+    height: 1px;
+    background-color: black; /* Adjust the color as needed */
+}

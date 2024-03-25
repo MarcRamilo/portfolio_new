@@ -1,0 +1,30 @@
+.paragraph{
+    font-family: 'Times New Roman', Times, serif;
+   text-align: center;
+}
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #df5b0f;
+    color: white;
+    font-style: italic;
+  }
+
+
+  
+
+.container {
+    width: 400px;
+    height: 200px;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  padding: 0 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+  text-align: center;
+}
+
+
+.title {
+  color: grey;
+}
