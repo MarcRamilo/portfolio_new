@@ -287,9 +287,6 @@ section .title::after{
 
 /* skills section styling */
 
-.skills .title::after{
-    content: "Services provided by him";
-}
 .skills .skills-content .column{
     width: calc(50% - 30px);
 }
