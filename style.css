@@ -113,7 +113,25 @@ div.container a {
 	font-family: Augestina;
 	src: url('/font/Agustina-Signature.otf');
 }
-
+.read-more{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+}
+.handwriting-font2{
+	font-family: Augestina;
+	text-transform: capitalize;
+    font-size: 80px; /* Ajusta el tamaño del texto según sea necesario */
+    padding-left: 2em;
+    color: white; /* Cambia el color del texto según sea necesario */
+    margin-right: auto;
+}
 .handwriting-font{
 	font-family: Augestina;
 	text-transform: capitalize;
@@ -145,4 +163,32 @@ div.container a {
 .dividerBlack{
     height: 1px;
     background-color: black; /* Adjust the color as needed */
+}
+
+.presentation{
+    font-size: 30px;
+}
+.lang {
+    font-size: 20px;
+    background-color: black;
+    color: red;
+    /* CENTER TEXT AND PUT FONTFAMILY */
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    /* ADD PADDING */
+    padding: 10px;
+    font-family: Raleway;
+}
+
+.lang {
+    list-style-type: none;
+}
+
+.lang a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color */
+}
+
+.lang a:hover {
+    color: white; /* Cambia el color a rojo al pasar el ratón */
 }
