@@ -138,7 +138,7 @@ div.container a {
     font-size: 20px; /* Ajusta el tamaño del texto según sea necesario */
     padding-left: 2em;
     color: white; /* Cambia el color del texto según sea necesario */
-    margin-right: auto;
+    padding: 10px;
 }
 
 .navbar-toggler {
