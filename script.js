@@ -1,5 +1,4 @@
-var txt = "Welcome to my web resume! I'm a technology enthusiast and software developer based in Ribes de Freser, Catalonia. Currently studying Web Application Development at Cívitanum Institute in Torelló. Excited about the future and eager to connect with you!";
-
+var txt = "Welcome to my web resume! I'm a technology enthusiast and software developer based in Campdevànol, Catalonia. Excited about the future and eager to connect with you!";
 var speed = 10; // Velocidad de la animación
 
 function typeWriter() {
@@ -46,5 +45,22 @@ function typeWriter() {
   }
 
   addChar();
+
+  let lastScrollTop = 0;
+  const navbar = document.getElementById('mainNavbar');
+
+  window.addEventListener('scroll', function () {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop < lastScrollTop) {
+      // Scroll hacia arriba → mostrar navbar
+      navbar.style.top = "0";
+    } else {
+      // Scroll hacia abajo → ocultar navbar
+      navbar.style.top = "-100px"; // o el alto de tu navbar
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Evita valores negativos
+  });
 }
 
